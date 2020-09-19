@@ -1,2 +1,2 @@
 # hookutil
-Python util for running hooks on a server
+A hook util written in Python allowing the user to run pre-uploaded shellscripts on a server upon web calls.

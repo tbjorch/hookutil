@@ -31,9 +31,9 @@ def health():
 
 @app.route("/", methods=["POST"])
 def hook():
-    data = json_controller("APIKey", "script")
+    data = json_controller("APIKey", "script", "args")
     if(data["APIKey"] == API_KEY):
-        run_script(data["script"])
+        run_script(data["script"], *data["args"])
     return "Ok!", 200
 
 

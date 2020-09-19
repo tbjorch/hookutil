@@ -1,1 +1,1 @@
-echo "hello world!"
+echo "hello world and especially ${1} ${2} and ${3}"

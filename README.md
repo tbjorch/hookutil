@@ -8,9 +8,12 @@ Make sure to add your own API key to add some level of authentication on the cal
 ## Add scripts
 1. Put your shellscript into the scripts directory
 2. Add the following metadata about the script into the scripts.ini configuration file:
-  - **[NAME]** of the script to be called in the web call
-  - **log_message** sent to the log whenever the script is executed
-  - **file_name** of the script file in the scripts directory
+```ini
+[NAME] #of the script to be run
+log_message=to be written in the log when the script is called
+file_name=of the script located in the scripts directory
+```
+(see the example script.ini file in the repo)
 
 ## Call hook
 1. Send a post request to the api on port 5959 (e.g. http://localhost:5959/)
